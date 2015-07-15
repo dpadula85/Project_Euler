@@ -55,6 +55,17 @@ def sieve_erat(n):
     
     return primes
 
+def nth_prime(n):
+    prime = 2
+    count = 1
+    iter = 3
+    while count < n:
+        if is_prime(iter):
+            prime = iter
+            count += 1
+        iter += 2
+    return prime
+
 def sum_primes(n):
     '''Returns the sum of the primes up to n included.'''
     return sum(sieve_erat(n))
