@@ -17,6 +17,10 @@ Created on Wed Jul 16 10:22:34 2015
 
 # The second approach needs 9! permutations to be partitioned in 256 ways each
 # for a total of 9! * 256 = 92897280 combinations, many of which equivalent.
+# I will run controls while the permutation is being partitioned, so that if
+# a number is not prime, the partition will be discarded.
+# I can add one more control to improve the speed, that is checking that one
+# number in the partition is higher than the previous.
 
 import time
 import itertools
