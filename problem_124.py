@@ -4,6 +4,8 @@ Created on Fri Jul 17 23:55:16 2015
 @author: Daniele                                                                                                        
 """
 
+# Description at https://projecteuler.net/problem=124
+
 import time
 from Euler import *
 from numbthy import *
